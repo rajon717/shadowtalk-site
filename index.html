@@ -1,10 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ShadowTalk</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShadowTalk | Your Privacy. Your Rules.</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#0b0b12;
+color:white;
+}
+
+header{
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#111;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#8a2eff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:15px;
+}
+
+.hero h2{
+color:#8a2eff;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+color:#cfcfcf;
+line-height:1.8;
+}
+
+.button{
+display:inline-block;
+margin-top:35px;
+padding:15px 35px;
+background:#8a2eff;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+}
+
+.features{
+padding:70px 20px;
+}
+
+.features h2{
+text-align:center;
+margin-bottom:40px;
+font-size:36px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+
+.card{
+background:#181825;
+padding:25px;
+border-radius:18px;
+}
+
+.card h3{
+margin-bottom:12px;
+color:#8a2eff;
+}
+
+.status{
+padding:70px 20px;
+text-align:center;
+}
+
+.status ul{
+list-style:none;
+line-height:2;
+font-size:18px;
+}
+
+footer{
+background:#111;
+padding:25px;
+text-align:center;
+margin-top:50px;
+color:#aaa;
+}
+</style>
+
 </head>
+
 <body>
-  <h1>Welcome to ShadowTalk</h1>
-  <p>My first website is live!</p>
+
+<header>
+
+<div class="logo">ShadowTalk</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Features</a>
+<a href="#">Security</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>ShadowTalk</h1>
+
+<h2>Your Privacy. Your Rules.</h2>
+
+<p>
+Private messaging built for people who value security,
+privacy and complete control over their conversations.
+</p>
+
+<a class="button" href="#">
+📱 Download (Coming Soon)
+</a>
+
+</section>
+
+<section class="features">
+
+<h2>Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🔒 End-to-End Encryption</h3>
+<p>Your messages stay private.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Lightning Fast</h3>
+<p>Fast and smooth messaging experience.</p>
+</div>
+
+<div class="card">
+<h3>🛡 Privacy Controls</h3>
+<p>You decide who can contact you.</p>
+</div>
+
+<div class="card">
+<h3>📁 Secure File Sharing</h3>
+<p>Share photos and documents safely.</p>
+</div>
+
+<div class="card">
+<h3>👥 Private Groups</h3>
+<p>Create secure communities.</p>
+</div>
+
+<div class="card">
+<h3>🌙 Beautiful Dark Mode</h3>
+<p>Modern premium interface.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="status">
+
+<h2>Development Status</h2>
+
+<ul>
+<li>🟢 Website — Live</li>
+<li>🟡 Android App — In Development</li>
+<li>⚪ Play Store Release — Coming Soon</li>
+<li>⚪ Web Version — Planned</li>
+</ul>
+
+</section>
+
+<footer>
+
+© 2026 ShadowTalk<br>
+
+Your Privacy. Your Rules.
+
+</footer>
+
 </body>
-</html>
+  </html>
