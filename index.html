@@ -1,331 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>ShadowTalk | Your Privacy. Your Rules.</title>
-
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
+<div class="grain" aria-hidden="true"></div>
+
 <header class="header">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-mark">S</span>
+      <span>ShadowTalk</span>
+    </a>
 
-<div class="container">
+    <nav class="nav" id="site-nav">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#security">Security</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-<a href="#" class="logo">
+    <a href="#" class="download-btn">Download</a>
 
-<img src="logo.png" alt="ShadowTalk Logo">
-
-<span>ShadowTalk</span>
-
-</a>
-
-<nav class="nav">
-
-<a href="#home">Home</a>
-
-<a href="#features">Features</a>
-
-<a href="#security">Security</a>
-
-<a href="#roadmap">Roadmap</a>
-
-<a href="#contact">Contact</a>
-
-</nav>
-
-<a href="#" class="download-btn">
-
-Download
-
-</a>
-
-</div>
-
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<header>
+<main>
 
-<nav class="navbar">
+  <section id="home" class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span class="dot-pulse"></span>Private messaging, done right</p>
+        <h1>Your Privacy.<br><span class="italic">Your Rules.</span></h1>
+        <p class="hero-sub">
+          ShadowTalk is a next-generation private messaging platform, crafted for
+          people who value privacy, security and freedom online.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-primary">Android — Coming Soon</a>
+          <a href="#features" class="btn-secondary">Explore Features</a>
+        </div>
+      </div>
 
-<div class="logo">
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="device">
+          <div class="device-rim"></div>
+          <div class="device-notch"></div>
 
-<img src="logo.png" alt="ShadowTalk Logo">
+          <div class="device-header">
+            <div class="avatar">A</div>
+            <div class="device-header-text">
+              <span class="contact-name">Alex</span>
+              <span class="contact-status" id="statusText">online</span>
+            </div>
+            <div class="live-badge"><span class="live-dot"></span>DEMO</div>
+          </div>
 
-<span>ShadowTalk</span>
+          <div class="device-body" id="chatBody"></div>
 
-</div>
-
-<ul>
-
-<li><a href="#">Home</a></li>
-
-<li><a href="#features">Features</a></li>
-
-<li><a href="#security">Security</a></li>
-
-<li><a href="#roadmap">Roadmap</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-<a href="#" class="download-btn">
-
-Download
-
-</a>
-
-</nav>
-
-</header>
-<section id="home" class="hero">
-
-<div class="hero-content">
-
-<h1>
-
-Your Privacy.<br>
-
-Your Rules.
-
-</h1>
-
-<p>
-
-ShadowTalk is a next-generation secure messaging platform built for people who value privacy, security and freedom.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#" class="btn-primary">
-
-Android Coming Soon
-
-</a>
-
-<a href="#features" class="btn-secondary">
-
-Explore Features
-
-</a>
-
-</div>
-
-</div>
-
+          <div class="phone-lock">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="4" y="10" width="16" height="10" rx="2"></rect>
+              <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+            </svg>
+            <span>End-to-end encrypted</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-<section class="hero">
 
-<div class="hero-content">
+  <section id="features" class="features">
+    <div class="container">
+      <p class="section-eyebrow reveal">Why ShadowTalk</p>
+      <h2 class="reveal">Why Choose ShadowTalk?</h2>
+      <p class="section-subtitle reveal">Private by default. Secure by design.</p>
 
-<h1>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="4" y="10" width="16" height="10" rx="2"></rect>
+              <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+            </svg>
+          </div>
+          <h3>End-to-End Encryption</h3>
+          <p>Your messages stay between you and the people you choose — no one else can read them in transit.</p>
+        </div>
 
-Private.<br>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z"></path>
+            </svg>
+          </div>
+          <h3>Privacy First</h3>
+          <p>No tracking, no ads. What you send and who you talk to stays yours.</p>
+        </div>
 
-Secure.<br>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"></path>
+            </svg>
+          </div>
+          <h3>Lightning Fast</h3>
+          <p>Messages send and arrive instantly, with a smooth experience on any connection.</p>
+        </div>
 
-Effortless.
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <path d="M14 2v6h6"></path>
+            </svg>
+          </div>
+          <h3>Secure File Sharing</h3>
+          <p>Share photos, videos and documents with the same protection as your messages.</p>
+        </div>
 
-</h1>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3>Private Groups</h3>
+          <p>Build communities you control, with the same privacy as a one-on-one chat.</p>
+        </div>
 
-<p>
-
-ShadowTalk is the next generation private messaging platform built for people who value privacy, security and freedom.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#" class="primary">
-
-Android Coming Soon
-
-</a>
-
-<a href="#" class="secondary">
-
-Learn More
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-<section id="features" class="features">
-
-<div class="container">
-
-<h2>Why Choose ShadowTalk?</h2>
-
-<p class="section-subtitle">
-Private by default. Secure by design.
-</p>
-
-<div class="features-grid">
-
-<div class="feature-card">
-<h3>🔒 End-to-End Encryption</h3>
-<p>Your messages stay between you and the people you choose.</p>
-</div>
-
-<div class="feature-card">
-<h3>🛡 Privacy First</h3>
-<p>No tracking. No ads. Your data belongs to you.</p>
-</div>
-
-<div class="feature-card">
-<h3>⚡ Lightning Fast</h3>
-<p>Fast, smooth and secure messaging experience.</p>
-</div>
-
-<div class="feature-card">
-<h3>📁 Secure File Sharing</h3>
-<p>Share files safely with strong protection.</p>
-</div>
-
-<div class="feature-card">
-<h3>👥 Private Groups</h3>
-<p>Create private communities with confidence.</p>
-</div>
-
-<div class="feature-card">
-<h3>🌙 Modern Dark Mode</h3>
-<p>Beautiful interface designed for day and night.</p>
-</div>
-
-</div>
-
-</div>
-
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </div>
+          <h3>Modern Dark Mode</h3>
+          <p>A comfortable interface designed to feel just as good at night as it does in daylight.</p>
+        </div>
+      </div>
+    </div>
   </section>
-<section id="features">
 
-<h2>
+  <section id="security" class="security">
+    <div class="container security-inner">
+      <div class="security-text reveal">
+        <p class="section-eyebrow">Security</p>
+        <h2>Built around one rule:<br>your data is yours.</h2>
+        <p class="section-subtitle">
+          ShadowTalk is designed so that your conversations stay between you and
+          the people you're talking to — not stored, sold, or scanned.
+        </p>
+      </div>
 
-Powerful Features
-
-</h2>
-
-<div class="cards">
-  <div class="card">
-    <h3>🔒 End-to-End Encryption</h3>
-    <p>Your messages stay private and protected with strong encryption.</p>
-</div>
-
-<div class="card">
-    <h3>⚡ Lightning Fast</h3>
-    <p>Send messages instantly with a smooth and reliable experience.</p>
-</div>
-
-<div class="card">
-    <h3>🛡 Privacy Controls</h3>
-    <p>Choose who can contact you and control your digital privacy.</p>
-</div>
-
-<div class="card">
-    <h3>📁 Secure File Sharing</h3>
-    <p>Share photos, videos and documents safely.</p>
-</div>
-
-<div class="card">
-    <h3>👥 Private Groups</h3>
-    <p>Create secure communities with complete privacy.</p>
-</div>
-
-<div class="card">
-    <h3>🌙 Beautiful Dark Mode</h3>
-    <p>A clean and modern interface designed for comfort.</p>
-</div>
-
-</div>
-</section>
-
-<section id="roadmap" class="roadmap">
-
-<h2>Development Roadmap</h2>
-
-<div class="timeline">
-
-<p>✅ Official Website - Live</p>
-
-<p>🟡 Android App - In Development</p>
-
-<p>🟡 Private Beta - Coming Soon</p>
-
-<p>⚪ Google Play Release</p>
-
-<p>⚪ Web Version</p>
-
-<p>⚪ iOS Version</p>
-
-</div>
-
-</section>
-<section id="home" class="hero">
-
-<div class="hero-content">
-
-<h1>
-
-Your Privacy.<br>
-
-Your Rules.
-
-</h1>
-
-<p>
-
-ShadowTalk is a next-generation secure messaging platform built for people who value privacy, security and freedom.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#" class="btn-primary">
-
-Android Coming Soon
-
-</a>
-
-<a href="#features" class="btn-secondary">
-
-Explore Features
-
-</a>
-
-</div>
-
-</div>
-
+      <ol class="security-list">
+        <li class="reveal">
+          <span class="num">01</span>
+          <div>
+            <h3>Encrypted in transit</h3>
+            <p>Every message is encrypted end-to-end before it leaves your device.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="num">02</span>
+          <div>
+            <h3>No ad tracking</h3>
+            <p>ShadowTalk doesn't build a profile on you to sell to advertisers.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="num">03</span>
+          <div>
+            <h3>You control your data</h3>
+            <p>Delete a conversation and it's gone — no hidden backups you didn't ask for.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
   </section>
-<section id="contact" class="contact">
 
-<h2>Contact</h2>
+  <section id="roadmap" class="roadmap">
+    <div class="container">
+      <p class="section-eyebrow reveal">What's next</p>
+      <h2 class="reveal">Development Roadmap</h2>
 
-<p>Email: support@shadowtalk.app</p>
+      <ol class="timeline">
+        <li class="done reveal"><span class="dot"></span>Official website — <strong>Live</strong></li>
+        <li class="active reveal"><span class="dot"></span>Android app — <strong>In development</strong></li>
+        <li class="active reveal"><span class="dot"></span>Private beta — <strong>Coming soon</strong></li>
+        <li class="reveal"><span class="dot"></span>Google Play release</li>
+        <li class="reveal"><span class="dot"></span>Web version</li>
+        <li class="reveal"><span class="dot"></span>iOS version</li>
+      </ol>
+    </div>
+  </section>
 
-<p>Website: https://rajon717.github.io/shadowtalk-site/</p>
+  <section id="contact" class="contact">
+    <div class="container reveal">
+      <p class="section-eyebrow">Get in touch</p>
+      <h2>Contact</h2>
+      <p><a href="mailto:support@shadowtalk.app">support@shadowtalk.app</a></p>
+      <p><a href="https://rajon717.github.io/shadowtalk-site/">rajon717.github.io/shadowtalk-site</a></p>
+    </div>
+  </section>
 
-</section>
+</main>
 
-<footer>
-
-<p>© 2026 ShadowTalk. All Rights Reserved.</p>
-
-<p>Your Privacy. Your Rules.</p>
-
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 ShadowTalk. All rights reserved.</p>
+    <p>Your Privacy. Your Rules.</p>
+  </div>
 </footer>
 
-</body>
+<script>
+  // ---- Nav toggle ----
+  const toggle = document.getElementById('nav-toggle');
+  const nav = document.getElementById('site-nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('a').forEach(link =>
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', false);
+    })
+  );
 
+  // ---- Scroll reveal ----
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // ---- Animated looping chat demo ----
+  const script = [
+    { from: 'them', text: 'Are we still on for tonight?' },
+    { from: 'me',   text: 'Locked in. See you at 8.' },
+    { from: 'them', text: 'Perfect. Sending the address now.' },
+    { from: 'me',   text: 'Got it — see you soon 🔒' },
+  ];
+
+  const chatBody = document.getElementById('chatBody');
+  const statusText = document.getElementById('statusText');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function wait(ms){ return new Promise(res => setTimeout(res, ms)); }
+
+  function addBubble(msg){
+    const bubble = document.createElement('div');
+    bubble.className = 'device-msg ' + msg.from;
+    bubble.textContent = msg.text;
+    chatBody.appendChild(bubble);
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
+
+  function addTyping(){
+    const typing = document.createElement('div');
+    typing.className = 'device-msg them typing-bubble';
+    typing.innerHTML = '<i></i><i></i><i></i>';
+    chatBody.appendChild(typing);
+    chatBody.scrollTop = chatBody.scrollHeight;
+    return typing;
+  }
+
+  async function playDemo(){
+    if (reducedMotion){
+      script.forEach(addBubble);
+      return;
+    }
+    while (true){
+      chatBody.innerHTML = '';
+      statusText.textContent = 'online';
+      await wait(500);
+
+      for (const msg of script){
+        if (msg.from === 'them'){
+          statusText.textContent = 'typing…';
+          const typingEl = addTyping();
+          await wait(1100);
+          typingEl.remove();
+          statusText.textContent = 'online';
+        } else {
+          await wait(400);
+        }
+        addBubble(msg);
+        await wait(900);
+      }
+
+      await wait(2200);
+
+      chatBody.classList.add('fade-out');
+      await wait(500);
+      chatBody.classList.remove('fade-out');
+    }
+  }
+
+  playDemo();
+</script>
+
+</body>
   </html>
