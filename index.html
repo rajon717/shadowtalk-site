@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ShadowTalk | Speak Freely. Stay Shadowed.</title>
-<link rel="icon" href="logo.png" type="image/png">
+<meta name="description" content="ShadowTalk is a privacy-first messaging app built on end-to-end encryption, a Privacy Dashboard you control, Secret Chats, and Panic Mode. My Privacy. My Rules.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238B3FE0'/%3E%3Cstop offset='1' stop-color='%232F8FFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Cpath d='M11 15v-3.2a5 5 0 0 1 10 0V15' stroke='%230A0A0E' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Crect x='8.5' y='15' width='15' height='11' rx='2.4' fill='%230A0A0E'/%3E%3C/svg%3E" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,12 @@
 <header class="header">
   <div class="container nav-inner">
     <a href="#home" class="logo">
-      <img src="logo.png" alt="ShadowTalk" class="logo-mark">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#0A0A0E" stroke-width="2">
+          <rect x="4" y="10" width="16" height="10" rx="2"></rect>
+          <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+        </svg>
+      </span>
       <span>ShadowTalk</span>
     </a>
 
@@ -43,11 +49,12 @@
     <div class="hero-glow" aria-hidden="true"></div>
     <div class="container hero-inner">
       <div class="hero-content reveal">
-        <p class="eyebrow"><span class="dot-pulse"></span>Private messaging, done right</p>
+        <p class="eyebrow"><span class="dot-pulse"></span>My Privacy. My Rules.</p>
         <h1>Speak Freely.<br><span class="italic">Stay Shadowed.</span></h1>
         <p class="hero-sub">
-          ShadowTalk is a next-generation private messaging platform, crafted for
-          people who value privacy, security and freedom online.
+          ShadowTalk is a privacy-first messaging app built on end-to-end encryption —
+          with a Privacy Dashboard that puts every setting in one place, instead of
+          buried three menus deep like everywhere else.
         </p>
         <div class="hero-buttons">
           <a href="#" class="btn-primary">Android — Coming Soon</a>
@@ -86,8 +93,8 @@
   <section id="features" class="features">
     <div class="container">
       <p class="section-eyebrow reveal">Why ShadowTalk</p>
-      <h2 class="reveal">Why Choose ShadowTalk?</h2>
-      <p class="section-subtitle reveal">Private by default. Secure by design.</p>
+      <h2 class="reveal">Privacy isn't a setting. It's the default.</h2>
+      <p class="section-subtitle reveal">Every feature below exists to put you in control of what you share, and with whom.</p>
 
       <div class="features-grid">
         <div class="feature-card reveal">
@@ -98,38 +105,18 @@
             </svg>
           </div>
           <h3>End-to-End Encryption</h3>
-          <p>Your messages stay between you and the people you choose — no one else can read them in transit.</p>
+          <p>Every message, call, and file is encrypted on your device before it ever leaves — built on the same protocol trusted by leading secure messengers, not a homemade alternative.</p>
         </div>
 
         <div class="feature-card reveal">
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
-              <path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 8v4l3 2"></path>
             </svg>
           </div>
-          <h3>Privacy First</h3>
-          <p>No tracking, no ads. What you send and who you talk to stays yours.</p>
-        </div>
-
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
-              <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"></path>
-            </svg>
-          </div>
-          <h3>Lightning Fast</h3>
-          <p>Messages send and arrive instantly, with a smooth experience on any connection.</p>
-        </div>
-
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-              <path d="M14 2v6h6"></path>
-            </svg>
-          </div>
-          <h3>Secure File Sharing</h3>
-          <p>Share photos, videos and documents with the same protection as your messages.</p>
+          <h3>One Privacy Dashboard</h3>
+          <p>Last seen, read receipts, online status, profile photo — every privacy control lives in one clear screen, not scattered across nested settings menus.</p>
         </div>
 
         <div class="feature-card reveal">
@@ -141,18 +128,39 @@
               <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
           </div>
-          <h3>Private Groups</h3>
-          <p>Build communities you control, with the same privacy as a one-on-one chat.</p>
+          <h3>Contact-Level Privacy</h3>
+          <p>Set different privacy rules for every person you talk to. Share more with close friends, less with everyone else — your call, per contact.</p>
         </div>
 
         <div class="feature-card reveal">
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              <path d="M12 2l8 4v6c0 5.5-3.8 8.7-8 10-4.2-1.3-8-4.5-8-10V6l8-4z"></path>
             </svg>
           </div>
-          <h3>Modern Dark Mode</h3>
-          <p>A comfortable interface designed to feel just as good at night as it does in daylight.</p>
+          <h3>Secret Chats &amp; Panic Mode</h3>
+          <p>Lock sensitive conversations behind biometrics, keep them out of your main chat list entirely, or trigger Panic Mode to hide everything sensitive in an instant.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 7v5l4 2"></path>
+            </svg>
+          </div>
+          <h3>Self-Destruct &amp; View-Once</h3>
+          <p>Send messages that disappear on your schedule, or photos that can only be opened once. Once it's gone from our servers, it's gone.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z"></path>
+            </svg>
+          </div>
+          <h3>No Ads. No Tracking. Ever.</h3>
+          <p>We don't build a profile on you, we don't sell your data, and we don't show you ads. ShadowTalk makes money from the app, not from you.</p>
         </div>
       </div>
     </div>
@@ -164,8 +172,9 @@
         <p class="section-eyebrow">Security</p>
         <h2>Built around one rule:<br>your data is yours.</h2>
         <p class="section-subtitle">
-          ShadowTalk is designed so that your conversations stay between you and
-          the people you're talking to — not stored, sold, or scanned.
+          ShadowTalk is designed so your conversations stay between you and the
+          people you're talking to — not stored, sold, or scanned. Our servers
+          only ever relay encrypted data they cannot read.
         </p>
       </div>
 
@@ -173,22 +182,22 @@
         <li class="reveal">
           <span class="num">01</span>
           <div>
-            <h3>Encrypted in transit</h3>
-            <p>Every message is encrypted end-to-end before it leaves your device.</p>
+            <h3>Encrypted end-to-end</h3>
+            <p>Messages are encrypted on your device and decrypted only on the recipient's — our servers never hold a readable copy.</p>
           </div>
         </li>
         <li class="reveal">
           <span class="num">02</span>
           <div>
             <h3>No ad tracking</h3>
-            <p>ShadowTalk doesn't build a profile on you to sell to advertisers.</p>
+            <p>ShadowTalk doesn't build a behavioral profile on you to sell to advertisers. There are no ads to target you with in the first place.</p>
           </div>
         </li>
         <li class="reveal">
           <span class="num">03</span>
           <div>
             <h3>You control your data</h3>
-            <p>Delete a conversation and it's gone — no hidden backups you didn't ask for.</p>
+            <p>Delete a conversation and it's gone. Delete your account and your data is removed on a clear, published schedule — no hidden backups you didn't ask for.</p>
           </div>
         </li>
       </ol>
@@ -202,11 +211,11 @@
 
       <ol class="timeline">
         <li class="done reveal"><span class="dot"></span>Official website — <strong>Live</strong></li>
+        <li class="active reveal"><span class="dot"></span>Core platform &amp; encryption — <strong>In development</strong></li>
         <li class="active reveal"><span class="dot"></span>Android app — <strong>In development</strong></li>
-        <li class="active reveal"><span class="dot"></span>Private beta — <strong>Coming soon</strong></li>
+        <li class="reveal"><span class="dot"></span>Private beta</li>
         <li class="reveal"><span class="dot"></span>Google Play release</li>
-        <li class="reveal"><span class="dot"></span>Web version</li>
-        <li class="reveal"><span class="dot"></span>iOS version</li>
+        <li class="reveal"><span class="dot"></span>Web &amp; iOS versions</li>
       </ol>
     </div>
   </section>
@@ -215,7 +224,7 @@
     <div class="container reveal">
       <p class="section-eyebrow">Get in touch</p>
       <h2>Contact</h2>
-      <p><a href="mailto:support@shadowtalk.app">support@shadowtalk.app</a></p>
+      <p><a href="mailto:mdtanvirislamrajon8@gmail.com">mdtanvirislamrajon8@gmail.com</a></p>
       <p><a href="https://rajon717.github.io/shadowtalk-site/">rajon717.github.io/shadowtalk-site</a></p>
     </div>
   </section>
@@ -225,7 +234,7 @@
 <footer class="footer">
   <div class="container footer-inner">
     <p>&copy; 2026 ShadowTalk. All rights reserved.</p>
-    <p>Speak Freely. Stay Shadowed.</p>
+    <p>My Privacy. My Rules.</p>
   </div>
 </footer>
 
@@ -323,4 +332,5 @@
 </script>
 
 </body>
-      </html>
+          </html>
+                                  
