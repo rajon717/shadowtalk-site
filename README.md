@@ -1,2 +1,2 @@
-# shadowtalk-site
-Official website for ShadowTalk app
+# ShadeChat-site
+Official website for ShadeChat app
