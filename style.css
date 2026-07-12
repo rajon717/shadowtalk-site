@@ -96,7 +96,6 @@ h1,h2,h3{
   width: 32px;
   height: 32px;
   border-radius: 9px;
-  object-fit: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,9 +104,6 @@ h1,h2,h3{
   font-size: 0.95rem;
   color: var(--obsidian);
   box-shadow: 0 4px 14px -4px rgba(139,63,224,0.5);
-  /* Added: this class now also wraps an inline SVG mark (index.html no
-     longer references a missing logo.png) — needs its own background
-     since there's no <img> providing one. */
   background: var(--accent-gradient);
   flex-shrink: 0;
 }
@@ -676,5 +672,4 @@ h1,h2,h3{
 a:focus-visible, button:focus-visible{
   outline: 2px solid var(--champagne);
   outline-offset: 3px;
-  }
-  
+    }
